@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sumas.MainPage">
+
+    <StackLayout  Background="#73C6B6">
+        
+        <Frame BackgroundColor="#AED6F1" 
+               Padding="20" 
+               
+               CornerRadius="0">
+            <Label Text="Ejercicio 1" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="black" 
+                   FontSize="20"
+                   FontFamily=""/>
+        </Frame>
+
+        <Label Text="Ingresar un Número" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,34,30,0"/>
+        
+        <Entry x:Name="Numero1"
+               Placeholder="1234..."
+               Keyboard="Numeric"
+               />
+
+        <Label Text="Ingresar un Número" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,14,30,0"/>
+        
+        <Entry x:Name="Numero2"
+               Placeholder="1234..."
+               Keyboard="Numeric"
+               />
+
+        <Button 
+              Text="Sumar" 
+                Clicked="Sumar_Clicked"
+                TextTransform="None"
+                BackgroundColor="#82E0AA"
+                TextColor="black"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                Padding="10,10,10,10"  
+                Margin="30,10,30,10"                
+                        />
+        <Button Text="Restar" 
+                Clicked="Restar_Clicked"
+                TextTransform="None"
+                BackgroundColor="#82E0AA"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                Padding="10,10,10,10"  
+                Margin="30,0,30,10"                
+                        />
+        <Button Text="Multiplicar" 
+                Clicked="Multiplicar_Clicked"
+                TextTransform="None"
+                BackgroundColor="#82E0AA"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                Padding="10,10,10,10"  
+                Margin="30,0,30,10"                
+                        />
+        <Button Text="Dividir" 
+                Clicked="Dividir_Clicked"
+                TextTransform="None"
+                BackgroundColor="#82E0AA"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                Padding="10,10,10,10"  
+                Margin="30,0,30,10"                
+                        />
+
+    </StackLayout>
+
+</ContentPage>
